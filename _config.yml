@@ -7,7 +7,7 @@
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 #--------------------------
 
-title: fr334aks-mini Blog # the main title
+title: Winter's Blog # the main title
 
 tagline: Team  fr334aks-mini # it will display as the sub-title
 
@@ -15,25 +15,25 @@ description: >- # used by seo meta and the atom feed
   Realm of Knowledge
 
 # Replace with the website url, e.g. 'https://username.github.io'
-url: "https://fr334aks-mini.github.io/"
+url: "https://w1nterFr3ak.github.io/"
 
-author: 05t3 # change to your full name
+author: Winter # change to your full name
 
 avatar: /assets/img/sample/fr334aks-logo.png # support internet resources
 
 github:
-  username: fr334aks-mini # change to your github username
+  username: W1nterFr3ak # change to your github username
 
 twitter:
-  username: fr334aksmini # change to your twitter username
+  username: byronchris25 # change to your twitter username
 
 social:
-  name: fr334aks-mini # it will shows as the copyright owner in Footer
-  email: fr334aks-mini@protonmail.com # change to your email address
+  name: Winter # it will shows as the copyright owner in Footer
+  email: byronchris25@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/fr334aksmini # change to your twitter homepage
-    - https://github.com/fr334aks-mini/ # change to your github homepage
+    - https://twitter.com/byronchri25 # change to your twitter homepage
+    - https://github.com/W1nterFr3ak/ # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
