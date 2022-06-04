@@ -1,8 +1,8 @@
 ---
-title: "Tryhackme — # Wgel: Easy"
+title: "Tryhackme — Wgel: Easy"
 date: 2022-6-04 12:30:00 +0530
-categories: [Tryhackme,Windows Machines]
-tags: [tryhackme, Linux, sudo, wget, web]
+categories: [Tryhackme,Linux Machines]
+tags: [tryhackme, sudo, wget, web, python]
 image: /assets/img/Posts/wgel.png
 ---
 
@@ -50,7 +50,7 @@ Finding nothind else in the source we proceed to fuzzing for  hidden directories
 ![[Pasted image 20220604190227.png]]
 We find a directory sitemap, navigating to it we get a  unap template which had nothing of intrest so we can procede to fuzz the sitemap path for any hidden files or directories
 
-##### Fuzzing sitemap
+### Fuzzing sitemap
 ![[Pasted image 20220604184143.png]]
 We get a .ssh directory which contained jessie's id_rsa private key which we can use to get our initial foothold.
 
