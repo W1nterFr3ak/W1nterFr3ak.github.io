@@ -8,7 +8,7 @@ title: Hellow Winter Here
 ---
 
 # About
-## About me
+### About me
 
 My name is Chris Byron popularly know as winter or winterfreak online.
 I'm an offensive security scholar aiming to get a job as a pentester.
@@ -18,7 +18,7 @@ I'm intrested in general pentest and lowlevel exploits.
     - E-mail: byronchris25@gmail.com
     - Discord: winterfreak#7051
 
-## About the blogPermalink
+### About the blog
 
 This blog is a personal space where I share write-ups for CTF challenges, articles about certain topics, research that I do on OS internals, automation, exploit and malware development.
 
