@@ -58,24 +58,24 @@ We get a .ssh directory which contained jessie's id_rsa private key which we can
 ## Initial Foothold
 Using the id_rsa we ssh into the box and get our first flag in the Documents directory
 
-![](/assets/img/Posts/foothold1.png)
+![](/assets/img/Posts/wgel-img/foothold1.png)
 
 ### Privilage Escalation
 Checking for programs that can be executed as sudo without a password we find wget.
 ![](/assets/img/Posts/priv1.png)
 From this we can download the passwd and shadow file offline for cracking.
 
-![](/assets/img/Posts/priv2.png)
+![](/assets/img/Posts/wgel-img/priv2.png)
 Downloading the shadow file we find that the root user had no password set. This changes our plan from cracking to modifying the shadow file then reuploading to the box.
 
 First we create a unix password hash using pythons crypt module then we add it to the shadow file we create on our machine.
-![](/assets/img/Posts/priv3.png)
-![](/assets/img/Posts/priv4.png)
+![](/assets/img/Posts/wgel-img/priv3.png)
+![](/assets/img/Posts/wgel-img/priv4.png)
 
 We then start up an http server using python then proceed to download it on the target machine taking advantage of wget which we can run as root without a password to overwrite the shadow file with our own.
-![](/assets/img/Posts/priv5.png)
+![](/assets/img/Posts/wgel-img/priv5.png)
 Now we can switch to the root user using our modified password.
-![](/assets/img/Posts/priv6.png)
+![](/assets/img/Posts/wgel-img/priv6.png)
 
 ###### FIN
 Thats it for Wgel 
