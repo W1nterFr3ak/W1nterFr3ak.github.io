@@ -7,7 +7,24 @@ title: Hellow Winter Here
 # MIT License
 ---
 
-Hellow, Im Winterfreak popularly known as winter. I a Cybersecurity nerd and a die hard anime fan lol :).
-Im also the team captain of fr334aks-mini the number one ctf team in Kenya.My strong suit lies in boot2root and pwn with some knowledge on web and crypto.
-But this blog isnt about me but its about my journey in infosec. So lookfoward to many writeups. ;)
+# About
+## About me
+
+My name is Chris Byron popularly know as winter or winterfreak online.
+I'm an offensive security scholar aiming to get a job as a pentester.
+I'm also the captain of fr334aks-mini the number one active ctf team in kenya as per ctftimes statistics.
+I'm intrested in general pentest and lowlevel exploits.
+
+    - E-mail: byronchris25@gmail.com
+    - Discord: winterfreak#7051
+
+## About the blogPermalink
+
+This blog is a personal space where I share write-ups for CTF challenges, articles about certain topics, research that I do on OS internals, automation, exploit and malware development.
+
+The goals behind this blog are simple:
+
+    - Document what I learn.
+    - Share knowledge
+
 
