@@ -41,7 +41,7 @@ Port Scan Summary :
 Port 80 is the **port number assigned to commonly used internet communication protocol, Hypertext Transfer Protocol (HTTP)**. It is the default network port used to send and receive unencrypted web pages.
 Browsing to the website we find an apache landing page.
 ### View Source Code
-![[Pasted image 20220604184422.png]]
+![]("/assets/img/Posts/Pasted image 20220604184422.png")
 Viewing the source code we find a message left for user Jessie to update the website. From this we can note down that there is a user jessie who has permisions to modify the website and we assume its via ssh. 
 
 ### Fuzzing
