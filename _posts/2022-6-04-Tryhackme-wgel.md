@@ -41,13 +41,13 @@ Port Scan Summary :
 Port 80 is the **port number assigned to commonly used internet communication protocol, Hypertext Transfer Protocol (HTTP)**. It is the default network port used to send and receive unencrypted web pages.
 Browsing to the website we find an apache landing page.
 ### View Source Code
-![]("/assets/img/Posts/wget-img/Pasted\ image\ 20220604184422.png")
+![](/assets/img/Posts/wget-img/Pasted\ image\ 20220604184422.png)
 Viewing the source code we find a message left for user Jessie to update the website. From this we can note down that there is a user jessie who has permisions to modify the website and we assume its via ssh. 
 
 ### Fuzzing
 Finding nothind else in the source we proceed to fuzzing for  hidden directories and files.
 
-![[Pasted image 20220604190227.png]]
+![](Pasted image 20220604190227.png)
 We find a directory sitemap, navigating to it we get a  unap template which had nothing of intrest so we can procede to fuzz the sitemap path for any hidden files or directories
 
 ### Fuzzing sitemap
