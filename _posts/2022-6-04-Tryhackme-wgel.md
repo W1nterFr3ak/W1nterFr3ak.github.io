@@ -41,41 +41,41 @@ Port Scan Summary :
 Port 80 is the **port number assigned to commonly used internet communication protocol, Hypertext Transfer Protocol (HTTP)**. It is the default network port used to send and receive unencrypted web pages.
 Browsing to the website we find an apache landing page.
 ### View Source Code
-![](/assets/img/Posts/wget-img/source.png)
+![source](/assets/img/Posts/wgel-img/source.png)
 
 Viewing the source code we find a message left for user Jessie to update the website. From this we can note down that there is a user jessie who has permisions to modify the website and we assume its via ssh. 
 
 ### Fuzzing
 Finding nothind else in the source we proceed to fuzzing for  hidden directories and files.
 
-![](Pasted image 20220604190227.png)
+![](/assets/img/Posts/wgel-img/fuzzing1.png)
 We find a directory sitemap, navigating to it we get a  unap template which had nothing of intrest so we can procede to fuzz the sitemap path for any hidden files or directories
 
 ### Fuzzing sitemap
-![[Pasted image 20220604184143.png]]
+![](/assets/img/Posts/wgel-img/fuzzing2.png)
 We get a .ssh directory which contained jessie's id_rsa private key which we can use to get our initial foothold.
 
 ## Initial Foothold
 Using the id_rsa we ssh into the box and get our first flag in the Documents directory
 
-![[Pasted image 20220604184923.png]]
+![](/assets/img/Posts/foothold1.png)
 
 ### Privilage Escalation
 Checking for programs that can be executed as sudo without a password we find wget.
-![[Pasted image 20220604185041.png]]
+![](/assets/img/Posts/priv1.png)
 From this we can download the passwd and shadow file offline for cracking.
 
-![[Pasted image 20220604191116.png]]
+![](/assets/img/Posts/priv2.png)
 Downloading the shadow file we find that the root user had no password set. This changes our plan from cracking to modifying the shadow file then reuploading to the box.
 
 First we create a unix password hash using pythons crypt module then we add it to the shadow file we create on our machine.
-![[Pasted image 20220604192038.png]]
-![[Pasted image 20220604192302.png]]
+![](/assets/img/Posts/priv3.png)
+![](/assets/img/Posts/priv4.png)
 
 We then start up an http server using python then proceed to download it on the target machine taking advantage of wget which we can run as root without a password to overwrite the shadow file with our own.
-![[Pasted image 20220604192937.png]]
+![](/assets/img/Posts/priv5.png)
 Now we can switch to the root user using our modified password.
-![[Pasted image 20220604193141.png]]
+![](/assets/img/Posts/priv6.png)
 
 ###### FIN
 Thats it for Wgel 
