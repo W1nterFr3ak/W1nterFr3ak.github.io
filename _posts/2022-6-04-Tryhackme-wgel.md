@@ -3,7 +3,7 @@ title: "Tryhackme — Wgel: Easy"
 date: 2022-6-04 12:30:00 +0530
 categories: [Tryhackme,Linux Machines]
 tags: [tryhackme, sudo, wget, web, python]
-image: /assets/img/Posts/wgel.png
+image: /assets/img/Posts/wgel-img/wgel.png
 ---
 
 > Wgel is an intresting easy box that shows how we can make use of wget  which is allowed to run as superuser by `sudo`, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access.
@@ -33,7 +33,7 @@ Nmap done: 1 IP address (1 host up) scanned in 45.86 seconds
 
 ```
 Port Scan Summary :
-- port 80    htpp
+- port 80    http
 - port 22    ssh
 
 
