@@ -3,7 +3,7 @@ title: "Notes — Active Directory"
 date: 2022-06-06 12:30:00 +0530
 categories: [Red Team Notes]
 tags: [Active Directory, Basics]
-image: /assets/img/Posts/RedNotes/ADbasics/AD.jpg
+image: /assets/img/Posts/RedNotes/ADbasics/AD.jpg 
 ---
 
 # Overview
