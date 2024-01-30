@@ -10,21 +10,26 @@ title: Hellow Winter Here
 # About
 ### About me
 
-My name is Chris Byron popularly know as winter or winterfreak online.
-I'm an offensive security scholar aiming to get a job as a pentester.
-I'm also the captain of fr334aks-mini the number one active ctf team in kenya as per ctftimes statistics.
-I'm intrested in general pentest and lowlevel exploits.
+Security Researcher (well im trying to be)
+
+Android and Windows are my Forte<br>
+CTFS who doesn't love them, they wake you up every time right :)<br>
+OOh yeah I work as a pentester btw 
 
     - E-mail: byronchris25@gmail.com
-    - Discord: winterfreak#7051
+    - Discord: winter.cb
 
 ### About the blog
 
-This blog is a personal space where I share write-ups for CTF challenges, articles about certain topics, research that I do on OS internals, automation, exploit and malware development.
+This blog is a personal space where I share write-ups for CTF challenges, articles about certain topics, research that I do on OS (linux(Android)/windows) internals.
 
 The goals behind this blog are simple:
 
     - Document what I learn.
     - Share knowledge
+<hr>
+
+**Disclaimer**: Im a noob so dont believe me, verify everything :) 
+
 
 
