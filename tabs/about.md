@@ -29,7 +29,7 @@ The goals behind this blog are simple:
     - Share knowledge
 <hr>
 
-**Disclaimer**: Im a noob so dont believe me, verify everything :) 
+**Disclaimer**: Im so noob dont believe me, verify everything :) 
 
 
 
